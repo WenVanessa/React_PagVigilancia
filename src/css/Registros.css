@@ -1,0 +1,131 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  .header-admi {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .header-admi h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .header-admi p {
+    font-size: 16px;
+    color: #ffffff;
+  }
+  
+  /* Estilos de la tabla */
+  .employee-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    border: 1px solid #042c2c; /* Agregar borde a la tabla */
+  }
+  
+  .employee-table th,
+  .employee-table td {
+    padding: 10px;
+    border-bottom: 1px solid #042c2c; /* Cambiar el borde de las celdas */
+    text-align: left;
+  }
+  
+  .employee-table th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Estilos de los estados */
+  .status-a-tiempo {
+    color: green;
+  }
+  
+  .status-tardanza {
+    color: orange;
+  }
+  
+  /* Estilos de la sección de búsqueda y acciones */
+  .search-and-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    padding: 5px 10px;
+    border: 1px solid #042c2c; /* Cambiar el borde del contenedor de búsqueda */
+  }
+  
+  .search-icon {
+    color: #666;
+    margin-right: 5px;
+  }
+  
+  .search-input {
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  .actions {
+    display: flex;
+  }
+  
+  .select-date,
+  .export-to-excel {
+    background-color: #042c2c; /* Cambiar color de fondo de los botones */
+    color: white;
+    border: 1px solid #042c2c; /* Cambiar borde de los botones */
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .export-to-excel {
+    background-color: #000;
+  }
+  
+  .excel-icon {
+    margin-right: 5px;
+  }
+  
+  .select-date {
+    display: flex;
+    align-items: center;
+  }
+  
+  .clock-icon {
+    margin-right: 8px;
+  }
+  
+  /* Cambiar el color de las letras en el select de hora */
+  select {
+    color: white; /* Cambia el color del texto a blanco */
+    background-color: #042c2c; /* Fondo de color acorde con el estilo */
+    border: 1px solid #042c2c; /* Asegura que el borde del select también sea del mismo color */
+  }
+
+  .label-blanco {
+    color: white; /* Cambia el color del texto a blanco */
+  }
+  

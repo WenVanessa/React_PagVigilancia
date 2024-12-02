@@ -1,0 +1,226 @@
+/* Contenido principal */
+.content {
+    margin-left: 250px; /* Espacio para el Navbar */
+    padding: 20px;
+    background-color: #f9f9f9; /* Color claro */
+    min-height: 100vh;
+}
+
+.Admi {
+    background-color: #f0f4f8;
+    min-height: 100vh;
+    padding-top: 20px;
+}
+
+/* Header ocupa toda la parte superior */
+.header-admi {
+    margin-left: 0; /* Quita el espacio del Navbar */
+    padding: 20px;
+    background-color: #042c2c; /* Fondo verde oscuro */
+    color: white; /* Texto blanco */
+    border-bottom: 1px solid #e0e0e0; /* Línea debajo del header */
+    box-shadow: 0px 2px 5px rgba(4, 44, 44, 0.7); /* Sombra del mismo color */
+    display: flex;
+    justify-content: space-between; /* Espaciado entre elementos internos */
+    align-items: center;
+    border-radius: 10px;
+}
+
+/* Títulos y párrafos dentro del Header */
+.header-admi h1 {
+    font-size: 28px;
+    color: white; /* Título del mismo color que el borde */
+    margin: 0;
+}
+
+/* Párrafo dentro del Header */
+.header-admi p {
+    font-size: 16px;
+    color: white; /* Cambiar color del párrafo a blanco */
+    margin: 5px 0 0;
+}
+/* Estilo para las tarjetas (Card) */
+.bg-white {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #042c2c; /* Borde verde oscuro */
+    margin-top: 20px; /* Separación del header */
+}
+
+.shadow-md {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.rounded-lg {
+    border-radius: 8px;
+}
+
+.p-4 {
+    padding: 16px;
+}
+
+/* Estilo para el contenido de las tarjetas */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    border-bottom: 2px solid #042c2c; /* Línea en el header del card */
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #042c2c; /* Mismo color que el borde */
+}
+
+/* Estilo para los iconos dentro de las tarjetas */
+.h-4, .w-4 {
+    height: 16px;
+    width: 16px;
+    color: #042c2c; /* Icono del mismo color */
+}
+
+/* Estilo del contenido dentro de las tarjetas */
+.card-content {
+    padding: 16px;
+}
+
+.card-content .text-2xl {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-content p {
+    font-size: 12px;
+    color: #6b7280;
+}
+
+/* Grid para el layout de tarjetas */
+.grid {
+    display: grid;
+    gap: 20px;
+}
+
+.md\:grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 768px) {
+    .md\:grid-cols-3 {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Estilo de las pestañas */
+.tab-content {
+    margin-top: 20px;
+}
+
+.tab-container {
+    background-color: #042c2c; /* Fondo verde oscuro */
+    border-radius: 8px;
+    padding: 5px;
+    margin: 20px 0;
+    max-width: 335px; /* Reducir el ancho máximo del contenedor */
+    width: 100%; /* Asegurarse de que el contenedor ocupe todo el ancho disponible */
+}
+
+.space-y-4 {
+    margin-top: 16px;
+}
+
+
+.tab-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    padding: 0 12px; /* Reducir el espacio a los lados */
+}
+
+.tab {
+    padding: 4px 10px; /* Reducir el relleno de las pestañas */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    background-color: #f0f4f8;
+    color: #042c2c;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    flex: 1; /* Permitir que las pestañas se expandan y llenen el espacio disponible */
+    margin-right: 8px; /* Agregar espacio entre pestañas */
+}
+
+.tab:last-child {
+    margin-right: 0; /* Remove the right margin for the last tab */
+}
+
+.tab.active {
+    background-color: #042c2c;
+    color: white;
+}
+
+.tab-panels {
+    margin-top: 16px;
+    padding: 0 16px; /* Add padding to the left and right of the tab panels */
+}
+
+.tab:hover {
+    background-color: #e1e8ef;
+}
+
+/* Estilo de los botones */
+button {
+    background-color: #04cec5;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    border: none;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #04cec5;
+}
+
+.search-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+  
+.search-input,
+.area-select,
+.date-select,
+.export-button {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+  
+.search-input {
+    flex-grow: 1;
+}
+  
+.area-select,
+.date-select {
+    min-width: 120px;
+}
+  
+.export-button {
+    background-color: #042c2c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.export-button:hover {
+    background-color: #064545;
+}

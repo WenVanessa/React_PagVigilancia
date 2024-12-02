@@ -1,0 +1,42 @@
+.profile-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+  }
+  
+  .profile-info {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+  }
+  
+  .profile-field {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-field label {
+    font-weight: bold;
+    margin-right: 1rem;
+  }
+  
+  .profile-field span {
+    color: #555;
+  }
+  
+  .edit-profile-btn {
+    display: block;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #042c2c;  /* Actualizado al color deseado */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .edit-profile-btn:hover {
+    background-color: #031f1f; /* Un tono más oscuro para el hover */
+  }
+  

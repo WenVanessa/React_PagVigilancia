@@ -1,0 +1,203 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+  }
+  
+  /* Contenedor principal */
+  .content {
+    margin-left: 250px; /* Espacio para el Navbar */
+    padding: 20px;
+    background-color: #f9f9f9; /* Color claro */
+    min-height: 100vh;
+  }
+  
+  /* Header ocupa toda la parte superior */
+  .header-admi {
+    margin-left: 0; /* Quita el espacio del Navbar */
+    padding: 20px;
+    background-color: #042c2c; /* Fondo verde oscuro */
+    color: white; /* Texto blanco */
+    border-bottom: 1px solid #e0e0e0; /* Línea debajo del header */
+    box-shadow: 0px 2px 5px rgba(4, 44, 44, 0.7); /* Sombra del mismo color */
+    display: flex;
+    justify-content: space-between; /* Espaciado entre elementos internos */
+    align-items: center;
+    border-radius: 10px;
+  }
+  
+  /* Títulos y párrafos dentro del Header */
+  .header-admi h1 {
+    font-size: 28px;
+    color: white; /* Título del mismo color que el borde */
+    margin: 0;
+  }
+  
+  /* Párrafo dentro del Header */
+  .header-admi p {
+    font-size: 16px;
+    color: white; /* Cambiar color del párrafo a blanco */
+    margin: 5px 0 0;
+  }
+  
+  /* Tabla de empleados */
+  .employee-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .employee-table th,
+  .employee-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .employee-table th {
+    background-color: #042c2c;
+    color: black;
+    font-size: 16px;
+  }
+  
+  .employee-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .employee-table td {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .status-a-tiempo {
+    color: green;
+  }
+  
+  .status-tardanza {
+    color: orange;
+  }
+  
+  .employee-table button {
+    padding: 6px 12px;
+    background-color: #042c2c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+    font-size: 14px;
+  }
+  
+  .employee-table button:hover {
+    background-color: #035b5b;
+  }
+  
+  /* Formulario de agregar empleado */
+  .add-employee-form {
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-employee-form h3 {
+    color: #042c2c;
+    margin-bottom: 20px;
+  }
+  
+  .add-employee-form input,
+  .add-employee-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    color: black;
+  }
+  
+  .add-employee-form input[type="time"] {
+    width: 48%;
+    display: inline-block;
+    margin-right: 4%;
+  }
+  
+  .add-employee-form select {
+    width: 48%;
+    display: inline-block;
+  }
+  
+  .add-employee-form button {
+    background-color: #042c2c;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  .add-employee-form button:hover {
+    background-color: #035b5b;
+  }
+  
+  /* Estilos de botones de acción (Exportar, etc.) */
+  .actions button {
+    background-color: #042c2c;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: 1px solid #042c2c;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    display: inline-block;
+  }
+  
+  .actions button:hover {
+    background-color: #035b5b;
+  }
+  
+  /* Estilos de iconos */
+  .clock-icon,
+  .excel-icon {
+    margin-right: 8px;
+  }
+  
+  /* Estilo general para los botones */
+  button {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .employee-table th,
+    .employee-table td {
+      padding: 8px;
+    }
+  
+    .employee-table button {
+      padding: 5px 10px;
+    }
+  
+    .add-employee-form input,
+    .add-employee-form select,
+    .add-employee-form button {
+      font-size: 14px;
+    }
+  
+    .add-employee-form input[type="time"] {
+      width: 100%;
+      margin-right: 0;
+    }
+  
+    .add-employee-form select {
+      width: 100%;
+    }
+  }
+  

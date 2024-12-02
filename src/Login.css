@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #020410;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    background: url('../public/background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 550px;
+    background: url('../public/background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.container .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 58%;
+    height: 100%;
+    background: transparent;
+    padding: 80px;
+    color: #e4e4e4;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+.content .logo {
+    font-size: 30px;
+}
+
+
+.text-sci h2 {
+    font-size: 39px;
+    line-height: 1;
+}
+
+.text-sci h2 span {
+    font-size: 25px;
+}
+
+.text-sci p {
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.social-icons a i {
+    font-size: 22px;
+    color: #e4e4e4;
+    margin-right: 10px;
+    transition: .5s ease;
+}
+
+.social-icons a:hover i {
+    transform: scale(1.2);
+}
+
+.container .logreg-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - 50%);
+    height: 100%;
+}
+
+.logreg-box .form-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #e4e4e4;
+}
+
+.form-box h2 {
+    font-size: 32px;
+    text-align: Center;
+}
+
+.form-box .input-box {
+    position: relative;
+    width: 340px;
+    height: 50px;
+    border-bottom: 2px solid #e4e4e4;
+    margin: 30px 0;
+}
+
+.form-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #e4e4e4;
+    font-weight: 500;
+    padding-right: 28px;
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s ease;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+}
+.input-box .icon {
+    position: absolute;
+    top: 13px;
+    right: 0;
+    font-size: 19px;
+}
+
+.form-box .rember-forgot {
+    font-size: 14.5px;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.rember-forgot label input {
+    accent-color: #e4e4e4;
+    margin-right: 3px;
+}
+
+.rember-forgot a {
+    color: #e4e4e4;
+    text-decoration: none;
+}
+
+.rember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.rember-forgot label input[type="checkbox"] {
+    width: 16px;  
+    height: 16px; 
+    margin-right: 5px; 
+}
+
+.form-box .input-box select {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #e4e4e4;
+    font-weight: 500;
+    padding-right: 28px;
+    border-bottom: 2px solid #e4e4e4; /* Asegura que tenga una línea similar a los inputs */
+    appearance: none; /* Elimina la apariencia predeterminada del select */
+    cursor: pointer;
+}
+
+.form-box .input-box select:focus {
+    border-bottom: 2px solid #e4e4e4; /* Añade un borde cuando el select esté en foco */
+}
+
+.form-box .input-box select option {
+    background-color: #020410; /* Color de fondo de las opciones */
+    color: #e4e4e4; /* Color de texto de las opciones */
+}
+
+/* Estilo para el label asociado con el select */
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s ease;
+}
+
+/* Mueve el label arriba cuando el select está en foco o tiene un valor */
+.input-box select:focus~label,
+.input-box select:valid~label {
+    top: -5px;
+    font-size: 14px;
+}
+
+/* Icono dentro del select, si lo deseas */
+.input-box .icon {
+    position: absolute;
+    top: 13px;
+    right: 0;
+    font-size: 19px;
+    color: #e4e4e4;
+}
+
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background:	#042c2c;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #e4e4e4;
+    font-weight: 500;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    margin-top: 35px;
+}
+

@@ -1,0 +1,83 @@
+/* Contenedor del formulario */
+.p-6 {
+    padding: 24px;
+    border: 2px solid #042c2c;
+    border-radius: 8px;
+    background-color: #f9fafb;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+  
+/* Etiquetas de los campos */
+  label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #042c2c;
+    margin-bottom: 8px;
+}
+  
+/* Inputs generales */
+input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #042c2c;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #374151;
+    background-color: #ffffff;
+}
+  
+input::placeholder {
+    color: #9ca3af;
+}
+  
+input:focus {
+    outline: none;
+    border-color: #2a4d4d;
+    box-shadow: 0 0 4px rgba(4, 44, 44, 0.5);
+}
+  
+/* Botón de enviar */
+button[type="submit"] {
+    background-color: #042c2c;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+  
+button[type="submit"]:hover {
+    background-color: #064848;
+}
+  
+/* Botón responsive */
+.w-full {
+    width: 100%;
+}
+  
+/* Input de archivo */
+input[type="file"] {
+    font-size: 14px;
+    border: none;
+    color: #374151;
+    cursor: pointer;
+}
+  
+/* Espaciado entre los campos */
+.space-y-4 > * + * {
+    margin-top: 16px;
+}
+  
+/* Flex para el botón final */
+.flex {
+    display: flex;
+}
+  
+.justify-end {
+    justify-content: flex-end;
+}
+  
